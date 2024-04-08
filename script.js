@@ -2,7 +2,7 @@ function startAnimation() {
   const imageSelect = document.getElementById('image-select');
   const selectedImage = imageSelect.options[imageSelect.selectedIndex].value;
 
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 800; i++) {
     createBubble(selectedImage);
   }
 }
