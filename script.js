@@ -1,4 +1,5 @@
 function startAnimation() {
+  startAnimation();
   const imageSelect = document.getElementById('image-select');
   const selectedImage = imageSelect.options[imageSelect.selectedIndex].value;
 
