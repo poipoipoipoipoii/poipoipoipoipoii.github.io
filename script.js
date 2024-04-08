@@ -2,12 +2,11 @@ function startAnimation() {
   const imageSelect = document.getElementById('image-select');
   const selectedImage = imageSelect.options[imageSelect.selectedIndex].value;
 
-  for (let i = 0; i < 800; i++) {
+  for (let i = 0; i < 1000; i++) {
     createBubble(selectedImage);
   }
-}
 
-// Solicitar el modo de pantalla completa
+  // Solicitar el modo de pantalla completa
   const elem = document.documentElement;
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
@@ -19,6 +18,7 @@ function startAnimation() {
     elem.msRequestFullscreen();
   }
 }
+
 
 function createBubble(imageSrc) {
   const bubble = document.createElement('img');
