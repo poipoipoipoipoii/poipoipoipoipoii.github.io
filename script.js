@@ -23,18 +23,6 @@ function createBubble(imageSrc) {
   animateBubble(bubble);
 }
 
-const elem = document.documentElement;
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.mozRequestFullScreen) { /* Firefox */
-    elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE/Edge */
-    elem.msRequestFullscreen();
-  }
-}
-
 function animateBubble(bubble) {
   const speed = Math.random() * 4 + 1; // Velocidad aleatoria
 
